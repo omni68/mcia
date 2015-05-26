@@ -25,7 +25,6 @@ angular.module('starter.controllers', [])
 	$scope.search = search;
 	$scope.searchParams = {};
 	$scope.filteredResidents = [];
-	$scope.noSearchResultsMessage = "no search results found, please type at least three (3) characters to begin";
 	$scope.init();
 })
 
