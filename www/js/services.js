@@ -1,5 +1,11 @@
 angular.module('starter.services', [])
-
+.factory('ResidentSvc', function($http){
+    return {
+      all: function(){
+         return $http.get('../www/data.json').success(function(response){ return response; });
+      }
+    };
+})
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
