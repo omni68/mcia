@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, ResidentSvc, $filter) {
 	var setResidents = function(residents){
-		$scope.residents = residents;
+		$scope.residents = residents.data;
 	};
 
 	var search = function(){
