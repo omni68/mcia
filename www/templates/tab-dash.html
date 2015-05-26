@@ -4,7 +4,7 @@
       <input style="border:1px solid black;" type="text" ng-model="searchParams.name" ng-keyup="search()"/>
       <hr/>
     </div>
-    <div ng-if="filteredResidents.length == 0">{{noSearchResultsMessage}}</div>
+    <div ng-if="filteredResidents.length == 0">{{noSearchResultsMessage}}</div>&nbsp;({{filteredResidents.length}})
     <div class="list card" ng-repeat="resident in filteredResidents">
       <div class="item item-divider">{{resident.MAILTO}}</div>
       <div class="item item-body">

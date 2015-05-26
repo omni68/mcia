@@ -2,7 +2,7 @@ angular.module('starter.services', [])
 .factory('ResidentSvc', function($http){
     return {
       all: function(){
-         return $http.get('../www/data.json').success(function(response){ return response; });
+         return $http.get('js/data.json').success(function(response){ return response; });
       }
     };
 })

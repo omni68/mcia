@@ -23,8 +23,5 @@
   ],
   "cordovaPlatforms": [
     "android"
-  ],
-  "scripts": {
-      "start": "ws"
-  }
+  ]
 }
