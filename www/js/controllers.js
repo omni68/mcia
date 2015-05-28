@@ -33,6 +33,12 @@ angular.module('starter.controllers', [])
   $scope.remove = function(chat) {
     Chats.remove(chat);
   }
+
+  $scope.wasAngularMethodFired = false;
+
+  $scope.fireAnAngularMethod = function(){
+  	 $scope.wasAngularMethodFired = !$scope.wasAngularMethodFired;
+  }
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -43,4 +49,14 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+  $scope.items = [1,2,3,4,5];
+      $scope.selected = [];
+      $scope.toggle = function (item, list) {
+        var idx = list.indexOf(item);
+        if (idx > -1) list.splice(idx, 1);
+        else list.push(item);
+      };
+      $scope.exists = function (item, list) {
+        return list.indexOf(item) > -1;
+      };
 });
